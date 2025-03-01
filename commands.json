@@ -1,0 +1,361 @@
+{
+    "prefix": "&",
+    "commands": [
+      {
+        "name": "spam",
+        "description": "Spams a message a specified number of times",
+        "usage": ",spam <number> <message>",
+        "execute": "spamMessage",
+        "aliases": [
+          "s"
+        ]
+      },
+      {
+        "name": "hello",
+        "description": "Greets the user",
+        "usage": ",hello",
+        "execute": "sayHello",
+        "aliases": [
+          "hi",
+          "yo",
+          "wsg"
+        ]
+      },
+      {
+        "name": "u",
+        "description": "Get information about a Twitch channel (your own if no channel is provided)",
+        "usage": ",u [<channel>]",
+        "execute": "getInfo",
+        "aliases": [
+          "info",
+          "user"
+        ]
+      },
+      {
+        "name": "pyr",
+        "description": "Creates a text pyramid with the specified height and message",
+        "usage": ",pyr <height> <message>",
+        "execute": "createPyramid",
+        "aliases": [
+          "pyramid"
+        ]
+      },
+      {
+        "name": "commands",
+        "description": "Lists all available commands",
+        "usage": "?commands",
+        "execute": "listCommands",
+        "aliases": [
+          "coms",
+          "cmds"
+        ]
+      },
+      {
+        "name": "roll",
+        "description": "Rolls a dice and returns a number between 1 and 100",
+        "usage": "?roll",
+        "execute": "rollDice"
+      },
+      {
+        "name": "dog",
+        "description": "Sends a random dog picture.",
+        "usage": "?dog",
+        "execute": "sendDog"
+      },
+      {
+        "name": "cat",
+        "description": "Sends a random cat picture.",
+        "usage": "?cat",
+        "execute": "sendCat"
+      },
+      {
+        "name": "math",
+        "description": "Calculates a simple mathematical expression.",
+        "usage": "?math <expression>",
+        "execute": "calculateMath",
+        "aliases": [
+          "m"
+        ]
+      },
+      {
+        "name": "stats",
+        "description": "Displays channel statistics like followers and views.",
+        "usage": "?stats",
+        "execute": "getChannelStats"
+      },
+      {
+        "name": "lurk",
+        "description": "Marks you as lurking in the channel.",
+        "usage": "?lurk",
+        "execute": "setLurk"
+      },
+      {
+        "name": "shoutout",
+        "description": "Gives a shoutout to a specified user.",
+        "usage": "?shoutout <username>",
+        "execute": "shoutOut",
+        "aliases": [
+          "so"
+        ]
+      },
+      {
+        "name": "ping",
+        "description": "Checks the bot's responsiveness.",
+        "usage": "?ping",
+        "execute": "pingPong"
+      },
+      {
+        "name": "vanity",
+        "description": "Generates a vanity link for the specified user.",
+        "usage": "?vanity <username> or ?v <username>",
+        "execute": "generateVanity",
+        "aliases": [
+          "v"
+        ]
+      },
+      {
+        "name": "subscribers",
+        "description": "Gets the subscriber count for a specified Twitch channel.",
+        "usage": "?subscribers [<channel>] or ?subcount [<channel>] or ?subs [<channel>]",
+        "execute": "getSubscribers",
+        "aliases": [
+          "subcount",
+          "subs"
+        ]
+      },
+      {
+        "name": "channeluptime",
+        "description": "Displays the uptime of the specified channel.",
+        "usage": "?channeluptime [<channel>]",
+        "execute": "getUptime"
+      },
+      {
+        "name": "subscribeAge",
+        "aliases": [
+          "sa"
+        ],
+        "description": "Get the age of a subscription for a user.",
+        "execute": "subscribeAge"
+      },
+      {
+        "name": "logs",
+        "description": "Fetches user logs for a specific channel.",
+        "usage": "?logs <username> [<channel>]",
+        "execute": "getUserLogs",
+        "aliases": [
+          "log"
+        ]
+      },
+      {
+        "name": "goodnight",
+        "description": "Sends a goodnight message",
+        "usage": "?goodnight or ?gn",
+        "execute": "sayGoodnight",
+        "aliases": [
+          "gn"
+        ]
+      },
+      {
+        "name": "followage",
+        "description": "Check how long a user has been following the channel",
+        "usage": "?followage [<username>]",
+        "execute": "getFollowAge",
+        "aliases": [
+          "fa"
+        ]
+      },
+      {
+        "name": "joke",
+        "description": "Tells a random joke.",
+        "usage": "?joke",
+        "execute": "tellJoke",
+        "aliases": [
+          "dadjoke",
+          "tellmeajoke"
+        ]
+      },
+      {
+        "name": "7tvu",
+        "description": "Fetches and displays user info from 7TV.",
+        "usage": "?7tvu [<username>]",
+        "execute": "get7TVUserInfo",
+        "aliases": [
+          "7tvinfo",
+          "7tvuser"
+        ]
+      },
+      {
+        "name": "remind",
+        "description": "Sets a reminder for a specified user at a specified time.",
+        "usage": "?reminder <user> <time> <message>",
+        "execute": "setReminder",
+        "aliases": [
+          "reminder",
+          "remindme"
+        ]
+      },
+      {
+        "name": "coinflip",
+        "description": "Flips a coin and returns heads or tails.",
+        "usage": "?coinflip or ?cf or ?flip",
+        "execute": "coinFlip",
+        "aliases": [
+          "cf",
+          "flip"
+        ]
+      },
+      {
+        "name": "upsidedown",
+        "description": "Flips the text upside down.",
+        "usage": "?flip <text>",
+        "execute": "flipText",
+        "aliases": [
+          "ud"
+        ]
+      },
+      {
+        "name": "reverse",
+        "description": "Reverses the specified name or text.",
+        "usage": "?reverse <name>",
+        "execute": "reverseName",
+        "aliases": [
+          "rev"
+        ]
+      },
+      {
+        "name": "timer",
+        "description": "Sets a timer for a specified duration.",
+        "usage": "?timer <duration>",
+        "execute": "setTimer",
+        "aliases": [
+          "time"
+        ]
+      },
+      {
+        "name": "poll",
+        "description": "Creates a poll for users to vote on.",
+        "usage": "?poll <question> | <option1> | <option2> | ...",
+        "execute": "createPoll",
+        "aliases": [
+          "vote"
+        ]
+      },
+      {
+        "name": "ban",
+        "description": "Bans a specified user from the channel.",
+        "usage": "?ban <username>",
+        "execute": "banUser",
+        "aliases": [
+          "block",
+          "kick"
+        ]
+      },
+      {
+        "name": "timeout",
+        "description": "Times out a specified user for a duration.",
+        "usage": "?timeout <username> <duration>",
+        "execute": "timeoutUser",
+        "aliases": [
+          "mute",
+          "tempban"
+        ]
+      },
+      {
+        "name": "following",
+        "description": "Fetches all the users a specified Twitch user follows.",
+        "usage": "?following <username> or ?follows <username>",
+        "execute": "fetchFollowing",
+        "aliases": [
+          "follows"
+        ]
+      },
+      {
+        "name": "setprefix",
+        "description": "Changes the command prefix.",
+        "usage": "?setprefix <new_prefix>",
+        "execute": "changePrefix",
+        "aliases": [
+          "sp"
+        ]
+      },
+      {
+        "name": "prefix",
+        "description": "Shows the current command prefix.",
+        "usage": ",currentprefix",
+        "execute": "showCurrentPrefix",
+        "aliases": [
+          "cp",
+          "currentprefix"
+        ]
+      },
+      {
+          "name": "status",
+          "description": "Displays the uptime of the bot.",
+          "usage": "&uptime",
+          "execute": "getUptime",
+          "aliases": [
+            "up", "uptime"
+          ]
+      },
+      {
+        "name": "7tvu",
+        "description": "Fetch user information from 7TV",
+        "execute": "getUserInfo",
+        "aliases": []
+        },
+        {
+          "name": "help",
+          "description": "Provides help and documentation for available commands.",
+          "usage": "&help [<command>]",
+          "execute": "showHelp"
+        },
+        {
+          "name": "addwhitelist",
+          "description": "Adds a specified channel to the whitelist.",
+          "usage": "&addwhitelist <channel>",
+          "execute": "addChannelToWhitelist",
+          "aliases": [
+            "whitelistadd",
+            "aw" ]
+          },
+          {
+            "name": "removewhitelist",
+            "description": "Removes a specified channel from the whitelist.",
+            "usage": "&removewhitelist <channel>",
+            "execute": "removeChannelFromWhitelist",
+            "aliases": [
+              "rw"
+            ]
+          },
+          {
+            "name": "join",
+            "description": "Adds the bot to a specified channel.",
+            "usage": "&join <channel>",
+            "execute": "addBotToChannel",
+            "aliases": [
+              "addchannel",
+              "joinchannel"
+            ]
+          },
+          {
+            "name": "part",
+            "description": "Removes the bot from a specified channel.",
+            "usage": "&part <channel>",
+            "execute": "removeBotFromChannel",
+            "aliases": [
+              "leave",
+              "disconnect"
+            ]
+          },
+          {
+            "name": "afk",
+            "description": "Sets your status to AFK (Away From Keyboard).",
+            "usage": "&afk [<message>]",
+            "execute": "setAfkStatus"
+          },
+          {
+          
+      }
+    ]
+  }
+  
